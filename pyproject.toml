@@ -5,9 +5,14 @@ description = "Hybrid AI–NWP Multi-Model Forecast Blending System (SIH 26081) 
 requires-python = ">=3.10"
 dependencies = [
   "pandas", "numpy", "scipy", "scikit-learn", "fastapi", "uvicorn",
-  "pydantic", "streamlit", "plotly", "pyyaml", "requests", "pytest",
-  "httpx", "joblib", "pyarrow",
+  "pydantic", "pyyaml", "joblib", "pyarrow",
 ]
+
+[project.optional-dependencies]
+# Streamlit dashboard runs locally / deploys separately, not on Vercel.
+dashboard = ["streamlit", "plotly", "requests"]
+# Test/development-only tools.
+dev = ["pytest", "httpx"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
