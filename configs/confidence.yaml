@@ -1,0 +1,14 @@
+# Confidence + uncertainty calibration (DEMO-calibrated).
+intervals: [0.50, 0.80, 0.95]
+recent_window_cycles: 12
+temperature: 1.0
+smoothing:
+  alpha: 0.6                  # 0=fully previous, 1=fully new
+feature_defaults:
+  min_samples: 8
+confidence:
+  disagreement_penalty: 0.35
+  recent_error_penalty: 0.30
+  sample_penalty: 0.20
+  fallback_penalty: 0.15
+  base: 100

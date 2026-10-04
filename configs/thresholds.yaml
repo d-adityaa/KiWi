@@ -1,0 +1,24 @@
+# Prototype extreme-event thresholds (DEMO — NOT official IMD criteria).
+extremes:
+  rainfall:
+    heavy_rain_mm: 64.0            # 24h accumulation
+    moderate_rain_mm: 35.0
+    probability_alert: 0.5
+  temperature:
+    heatwave_degC: 40.0
+    severe_heatwave_degC: 45.0
+  wind:
+    high_wind_ms: 12.0
+    severe_wind_ms: 17.0
+  uncertainty:
+    high_width_ratio: 0.5          # interval width / forecast magnitude
+    disagreement_score_alert: 60
+
+# Prototype Risk Priority Index components (weights must sum to 1).
+rpi:
+  weights: {probability: 0.40, severity: 0.25, confidence_inverse: 0.15, persistence: 0.20}
+  categories:
+    low_max: 30
+    moderate_max: 55
+    high_max: 75
+    # above high_max -> CRITICAL

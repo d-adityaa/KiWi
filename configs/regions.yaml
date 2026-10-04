@@ -1,0 +1,7 @@
+# Region bounding boxes on the synthetic grid (DEMO).
+regions:
+  North:   {lat_min: 26.0, lat_max: 33.0, lon_min: 68.0, lon_max: 88.0}
+  West:    {lat_min: 8.0,  lat_max: 26.0, lon_min: 68.0, lon_max: 76.5}
+  Central: {lat_min: 18.0, lat_max: 26.0, lon_min: 76.5, lon_max: 83.0}
+  South:   {lat_min: 8.0,  lat_max: 20.0, lon_min: 75.0, lon_max: 88.0}
+  East:    {lat_min: 20.0, lat_max: 32.0, lon_min: 83.0, lon_max: 92.0}

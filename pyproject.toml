@@ -1,0 +1,13 @@
+[project]
+name = "kiwi"
+version = "1.0"
+description = "Hybrid AI–NWP Multi-Model Forecast Blending System (SIH 26081) — DEMO / SYNTHETIC DATA"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas", "numpy", "scipy", "scikit-learn", "fastapi", "uvicorn",
+  "pydantic", "streamlit", "plotly", "pyyaml", "requests", "pytest",
+  "httpx", "joblib", "pyarrow",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

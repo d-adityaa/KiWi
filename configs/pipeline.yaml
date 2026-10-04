@@ -1,0 +1,10 @@
+# Demo pipeline configuration.
+cycles_days: 60          # number of daily forecast cycles of history
+lead_buckets: [6, 12, 24, 48, 72]
+variables: [rainfall, temperature, wind]
+seed: 42
+grid: {lat_min: 10.0, lat_max: 30.0, lat_step: 2.5, lon_min: 70.0, lon_max: 88.0, lon_step: 2.5}
+gate: "treegate"
+smoothing_alpha: 0.6
+fallback_default_unavailable: []
+version: "1.0"

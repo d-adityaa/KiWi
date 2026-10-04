@@ -1,0 +1,18 @@
+app_name: KiWi
+subtitle: "Hybrid AI–NWP Multi-Model Forecast Blending System"
+data_label: "DEMO / SYNTHETIC DATA"
+footer: |
+  KiWi — Hybrid AI–NWP Multi-Model Forecast Blending System | SIH 26081
+  Demo / Synthetic Data | Version 1.0
+  Prototype only — synthetic data, not operational weather guidance.
+fonts: "'Public Sans', 'Source Sans Pro', Roboto, 'Open Sans', 'Noto Sans', 'Lucida Sans', sans-serif"
+colors:
+  background: "#ffffff"
+  panel: "#f7f7f5"
+  border: "#d8d8d4"
+  text: "#24282b"
+  muted: "#6b7177"
+  accent: "#3e6b8b"
+  ok: "#3f7d53"
+  warn: "#b07d2b"
+  alert: "#a4443c"

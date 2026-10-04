@@ -1,0 +1,47 @@
+{
+  "sources": [
+    {
+      "source_id": "GFS",
+      "type": "NWP",
+      "version": "gfs-demo-1.0",
+      "available": true
+    },
+    {
+      "source_id": "ECMWF",
+      "type": "NWP",
+      "version": "ecmwf-demo-1.0",
+      "available": true
+    },
+    {
+      "source_id": "IMD-WRF",
+      "type": "NWP",
+      "version": "imdwrf-demo-1.0",
+      "available": true
+    },
+    {
+      "source_id": "GraphCast",
+      "type": "AI/ML",
+      "version": "graphcast-demo-1.0",
+      "available": true
+    },
+    {
+      "source_id": "Pangu",
+      "type": "AI/ML",
+      "version": "pangu-demo-1.0",
+      "available": true
+    },
+    {
+      "source_id": "ENS",
+      "type": "ENSEMBLE",
+      "version": "ens-demo-1.0",
+      "available": true
+    }
+  ],
+  "components": {
+    "treegate": "treegate-1.0",
+    "bias_correction": "bias-1.0",
+    "confidence_calibration": "calibration-1.0",
+    "regime_engine": "regime-1.0"
+  },
+  "data_mode": "DEMO"
+}
